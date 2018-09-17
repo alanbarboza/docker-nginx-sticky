@@ -12,6 +12,7 @@ Nginx build with:
 - http_sub_module
 - http_gunzip_module
 - http_gzip_static_module
+- http_ssl_module
 - threads
 - stream
 - stream_realip_module
