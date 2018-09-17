@@ -31,7 +31,8 @@ RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 		--with-stream \
 		--with-stream_realip_module \
 		--with-compat \
-    --add-module=/usr/src/nginx-sticky-module \
+		--with-http_ssl_module \
+    		--add-module=/usr/src/nginx-sticky-module \
 	" \
 	&& addgroup -S nginx \
 	&& adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx \
