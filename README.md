@@ -27,6 +27,13 @@ is not working properly and I needed to implement some kind
 of layer between the app's container and nginx.
 The task of this layer is to provide sticky sessions
 
+## How to change timezone:
+
+Access console of container and execute the following commands.
+$ apk add --no-cache tzdata
+$ apk add -U tzdata
+$ cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+
 ## License
 
 [MIT License](License.md)
